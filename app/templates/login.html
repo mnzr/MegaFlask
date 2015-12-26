@@ -1,10 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<!-- extend from base layout -->
+{% extends "base.html" %}
 
-</body>
-</html>
+{% block content %}
+    <h1 id='greetings'>Sign In</h1>
+    <section id="login">
+    <form action="" method="post" name="login">
+        {# will get replaced w/ hidden field that implements the CSRF prevention that we enabled in the configuration.
+           This field needs to be in all your forms if you have CSRF enabled. The good news is that Flask-WTF handles
+           it for us, we just need to make sure it is included in the form. #}
+        {{ form.hidden_tag() }}
+        <p>
+            Please enter your OpenID:<br>
+            {{ form.openid(size=30) }}<br>
+            {# The actual fields of our form are rendered by the field objects, we just need to refer to a
+            {{form.field_name}} template argument in the place where each field should be inserted. Some fields can
+            take arguments. In our case, we are asking the text field to generate our openid field with a width of 80
+            characters. #}
+        </p>
+        <p>{{ form.remember_me }} Remember Me</p>
+        {# Since we have not defined the submit button in the form class we have to define it as a regular field. The
+        submit field does not carry any data so it doesn't need to be defined in the form class. #}
+        <p><input id="submit" type="submit" value="Sign In"></p>
+    </form>
+    </section>
+{% endblock %}
