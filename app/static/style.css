@@ -1,0 +1,19 @@
+body {
+    margin: 10%;
+    background: #FCFEF5;
+    color: #901F0F;
+    font-family: "Arial", cursive;
+}
+
+#greetings {
+    color: #948979;
+    background: #DCFFDE;
+    padding: 1%;
+}
+
+.posts {
+    border: .1em dotted;
+    text-align: justify;
+    padding: 1% 5% 1% 5%;
+    margin: 0% 10% 0% 10%;
+}
