@@ -21,46 +21,42 @@ body {
 #login {
     padding: 20px;
     margin: 10px;
-    width: 30%;
-    background: #ff0030;
-    color: #fff;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 1.3em;
-    border: 2px dashed #fff;
+    width: 350px;
+    background: #DCFFDE;
+    color: #901F0F;
+    border: 2px dashed #901F0F;
     border-radius: 10px;
-    box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-    text-shadow: -1px -1px #aa3030;
-    font-weight: normal;
 }
 
 #login ul{
     list-style-type: none;    
 }
 
-#submit{
-      position: relative;
-        vertical-align: top;
-          width: 100%;
-            height: 60px;
-              padding: 0;
-                font-size: 22px;
-                  color: white;
-                    text-align: center;
-                      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-                        background: #f39c12;
-                          border: 0;
-                            border-bottom: 2px solid #e8930c;
-                              cursor: pointer;
-                                -webkit-box-shadow: inset 0 -2px #e8930c;
-                                  box-shadow: inset 0 -2px #e8930c;
-
+input {
+      -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+    border-style: none;
+  color: #901F0F;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+    margin: 10px 20px 10px 20px;
+  text-decoration: none;
 }
-#submit:active {
-       top: 1px;
-         outline: none;
-           -webkit-box-shadow: none;
-             box-shadow: none;
 
+#submit{
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+    border-style: none;
+  color: #901F0F;
+  font-size: 20px;
+  background: #C0C0C0;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+#submit:hover {
+    background: #901F0F;
+    color: #C0C0C0;
 }
 
